@@ -12,7 +12,7 @@ function displayName(){
 
 function displayTabs(){
     if(empty($_SESSION["userFName"])){
-        echo "<a href='signup.html'>Sign Up</a>   <a href='login.html'>Log In</a>";
+        echo "<a href='signup.php'>Sign Up</a>   <a href='login.php'>Log In</a>";
     }
     else{
         echo "<a href='logout.php'>Log Out</a>";
@@ -30,6 +30,7 @@ if (isset($_POST['searchapt'])){
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <title>Home</title>
 </head>
 <body>
 <div id ="navBar">
@@ -40,7 +41,40 @@ if (isset($_POST['searchapt'])){
     </ul>
 </div>
 <div id = "aptPost">
-<p><a href='post.html' id="postRef">Post Your Apartment</a></p>
+<p><?php
+    if (!empty($_SESSION["userFName"])){
+        echo "<a href='post.php' id='postRef'>Post Your Apartment</a>";
+    }else{
+        echo "<a href='login.php' id='postRef'>Post Your Apartment</a>";
+    }?>
+</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container" style="text-align:center">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="uploads/apt1.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="uploads/apt2.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="uploads/apt3.jpg" style="width:75%">
+  </div>
+
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
 </div>
 <div id = "aptSearch">
 <p><div><p>Search by City and State</p>
@@ -107,5 +141,22 @@ if (isset($_POST['searchapt'])){
     </form>
 </div>
 </div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1} 
+        slides[slideIndex-1].style.display = "block"; 
+        setTimeout(showSlides, 8000); // Change image every 8 seconds
+    } 
+</script>
 </body>
 </html>

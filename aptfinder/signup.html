@@ -1,9 +1,18 @@
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
     <title>Sign Up</title>
 </head>
 
 <body>
+<div id ="navBar">
+    <ul name="topNav">
+        <li><a href="home.php">APARTMENTS</a></li>
+        <li style="float:right"><?php displayName();
+          displayTabs(); ?></li>
+    </ul>
+</div>
+
     <form action="/feltsmg/aptfinder/signup.php" method="post">
     First Name:<input type="text" name="firstname"><br>
     Last Name:<input type="text" name="lastname"><br>

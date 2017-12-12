@@ -4,14 +4,13 @@
 </head>
 
 <body>
-    <form action="/feltsmg/aptfinder/post.php" method="post">
+    <form action="/feltsmg/aptfinder/post.php" method="post" enctype="multipart/form-data">
     Apartment Complex:<input type="text" name="aptname"><br>    
     Lease Takeover Start Date:<input type="date" name="startdate"><br>
     Lease Takeover End Date:<input type="date" name="enddate"><br>
     Address:<input type="text" name="address"><br>
     Unit #:<input type="text" name="aptnumber"><br>
     City:<input type="text" name="city"><br>
-    Bedrooms:<input type="number" name="bedrooms" min="1" max="4"><br>
     State: <select name="state">
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
@@ -65,6 +64,9 @@
     <option value="WI">Wisconsin</option>
     <option value="WY">Wyoming</option>
 </select><br>
+    Bedrooms:<input type="number" name="bedrooms" min="1" max="4"><br>
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload"><br>
     Additional Comments:<textarea name="comments" rows="7" cols="30"></textarea>               
     <br>
     <input type="submit" name="postapt" value="Post">

@@ -25,6 +25,24 @@ function login()
     }
 }
 
+function displayName(){
+    if(!empty($_SESSION["userFName"])){
+        echo "Welcome, ";
+        echo $_SESSION["userFName"];
+        echo "  ";
+    }
+}
+
+function displayTabs(){
+    if(empty($_SESSION["userFName"])){
+        echo "<a href='signup.php'>Sign Up</a>   <a href='login.php'>Log In</a>";
+    }
+    else{
+        echo "<a href='logout.php'>Log Out</a>";
+    }
+}
+
+
 if (isset($_POST['login'])){
     login();
 }
@@ -32,9 +50,25 @@ if (isset($_POST['login'])){
 
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <title>Log In</title>
 </head>
 
 <body>
+<div id ="navBar">
+    <ul name="topNav">
+        <li><a href="home.php">APARTMENTS</a></li>
+        <li style="float:right"><?php displayName();
+          displayTabs(); ?></li>
+    </ul>
+</div>
+
+    <form action="/feltsmg/aptfinder/login.php" method="post">
+    Email Address:<input type="text" name="loginemail"><br>
+    Password:<input type="password" name="loginpassword"><br>
+    <input type="submit" name="login" value="Log In">
+    </form>
 </body>
 </html>
 
