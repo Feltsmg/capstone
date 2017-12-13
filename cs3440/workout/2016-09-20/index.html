@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <title>Acme Sales - Order Form</title>
+    <header><a class="head" href="compsci.appstate.edu">Acme Sales - Order Form</a></header>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+<nav>
+<ul style="list-style-type:none">
+    <li>
+        <a class="nav" href="">Home</a>
+    </li>
+    <li>
+        <a class="nav" href="http://www.w3schools.com/html/">html</a>
+    </li>
+    <li>
+        <a class="nav" href="http://www.w3schools.com/css/">css</a>
+    </li>
+    <li>
+        <a class="nav" href="http://www.w3schools.com/js/">javaScript</a>
+    </li>
+    <li>
+        <a class="nav" href="http://www.w3schools.com/jquery/">jQuery</a>
+    </li>
+</ul>
+</nav>
+<form action="student.cs.appstate.edu/feltsmg" method="get">
+    <fieldset>
+        <legend>Name</legend>
+        <table>
+        <tr>
+            <td>First Name:</td> <td><input class="box" type="text" name="firstname"></td>
+        </tr>
+        <tr>
+            <td>Middle Init:</td> <td><input class="box" type="text" name="middleinitial"></td>
+        </tr>
+        <tr>
+        <td>Last Name:</td> <td><input class="box" type="text" name="lastname"></td>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Shipping Address</legend>
+        <table>
+            <tr>
+                <td>Street:</td> <td><input class="box" type="text" name="shippingstreet"></td>
+            </tr>
+            <tr>
+                <td>City:</td> <td><input class="box" type="text" name="shippingcity"></td>
+            </tr>
+            <tr>
+                <td>State:</td> <td><input class="box" type="text" name="shippingstate"></td>
+            </tr>
+            <tr>
+                <td>Zip:</td> <td><label class="zip"><input class="box" type="text" name="shippingzip"></label></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Billing Address</legend>
+        <table>
+            <tr>
+                <td>Street:</td> <td><input class="box" type="text" name="billingstreet"></td>
+            </tr>
+            <tr>
+                <td>City:</td> <td><input class="box" type="text" name="billingcity"></td>
+            </tr>
+            <tr>
+                <td>State:</td> <td><input class="box" type="text" name="billingstate"></td>
+            </tr>
+            <tr>
+                <td>Zip:</td> <td><label class="zip"><input class="box" type="text" name="billingzip"></label></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Phone</legend>
+        <table>
+        <tr> 
+            <td>Home:</td> <td><label class="phone"><input class="box" type="text" name="homephone"></label></td>   
+        </tr>
+        <tr>
+            <td>Office:</td> <td><label class="phone"><input class="box" type="text" name="officephone"></label></td>
+        </tr>
+        <tr>
+            <td>Mobile:</td> <td><label class="phone"><input class="box" type="text" name="mobilephone"></label></td>
+        </tr>
+        <input class="salesperson" type="text" name="salesperson" value="Matt Felts">
+        </table>
+    </fieldset> <br>
+    <input type="submit" value="Submit"> <input type="reset" value="Reset">
+</form>
+</body>
+</html>

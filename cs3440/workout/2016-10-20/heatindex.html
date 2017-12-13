@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <title>Heat Index Table</title>
+        <meta charset="UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="heatindex.js"></script>
+        <script src="heatindextable.js"></script>
+        <link href="tablestyles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Heat Index Values</legend>
+            <form>
+                <table cellspacing="10px">
+                    <tr>
+                        <td><label for="tempMin"> Temperature Minimum: <input type="text" name="tempMin" id="tempMin" value="80"></label></td>
+                        <td><label for="tempMax"> Temperature Maximum: <input type="text" name="tempMax" id="tempMax" value="110"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="humidMin"> Relative Humidity % Minimum: <input type="text" name="humidMin" id="humidMin" value="40"></label></td>
+                        <td><label for="humidMax"> Relative Humidity % Maximum: <input type="text" name="humidMax" id="humidMax" value="90"></label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" name="createTable" id="createTable" value="Create Heat Index Table"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <br>
+        <br>
+        <div id="heatIndexTableContainer">
+            <table id="heatIndexTable"></table>
+        </div>
+    </body>
+</html>
+

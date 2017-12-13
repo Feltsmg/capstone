@@ -1,0 +1,51 @@
+fieldset {
+    display : block;
+    margin-left : 5px;
+    margin-right : 500px;
+}
+
+input.box:focus {
+    box-shadow : 5px 5px 2px lightblue;
+    background: lightgrey;
+}
+
+input.salesperson {
+    display : none;
+}
+
+label.zip:after {
+    content : "  Format: 99999-9999";
+}
+
+label.phone:after {
+    content : "  Format: 999-999-9999"
+}
+
+header {
+    font-size : 150%;
+    margin-left : 125px;
+}
+
+ul {
+    background-color : lightgrey;
+    margin-right : 500px;
+}
+
+li {
+    display : inline;
+    margin-right : 45px;
+}
+
+a.head {
+    cursor : crosshair;
+    text-decoration : none;
+}
+
+a.nav {
+    color : black;
+    text-decoration : none;
+}
+
+a.nav:hover {
+    color : magenta;
+}

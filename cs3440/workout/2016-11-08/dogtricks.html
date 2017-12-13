@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Dog Tricks</title>
+   <script src="dog.js"></script>
+   <script src="doginteraction.js"></script>
+<!--   <script>
+   d = new Dog("Lilly", 2006, 04, 01);
+   alert (d.name + " " + d.birthdate + " " + d.idle());
+   </script> -->
+</head>
+<body>
+<h1>Dog Tricks</h1>
+<form>
+<label>Name: <input type="text" id="namefield"></label><br>
+Birthday: <label>Year<input type="text" id="yearfield"></label>
+<label>Month<input type="text" id="monthfield"></label>
+<label>Day<input type="text" id="dayfield"></label><br>
+<select id="trickfield">
+<option value="idle">idle</option>
+<option value="sit">sit</option>
+<option value="fetch">fetch</option>
+<option value="shake">shake</option>
+<option value="down">down</option>
+</select>
+</form>
+<h2>My dog..."</h2>
+<table border="0">
+<tr><td>Name</td><td id="dogname"></td></tr>
+<tr><td>Birthday</td><td id="dogbirthday"></td></tr>
+<tr><td>Currently is...</td><td id="currenttrick"></td></tr>
+</body>
+</html>

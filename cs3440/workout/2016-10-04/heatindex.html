@@ -1,0 +1,122 @@
+<html>
+<head>
+<style>
+table {
+    border-collapse : collapse;
+}
+thead td, td.data {
+    text-align : center;
+}
+td {
+    height : 50px;
+    width : 75px;
+    border-style : solid;
+    border-width : 3px;
+}
+</style>
+</head>
+<body>
+    <script src="heatindex.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="8">
+                Temperature (F) versus Relative Humidity (%)
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&deg;F</td>
+                <td>90%</td>
+                <td>80%</td>
+                <td>70%</td>
+                <td>60%</td>
+                <td>50%</td>
+                <td>40%</td>
+                <td>35%</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td class="data"><script>document.write(heatindex(75,90));</script></td>
+                <td class="data"><script>document.write(heatindex(75,80));</script></td>
+                <td class="data"><script>document.write(heatindex(75,70));</script></td>
+                <td class="data"><script>document.write(heatindex(75,60));</script></td>
+                <td class="data"><script>document.write(heatindex(75,50));</script></td>
+                <td class="data"><script>document.write(heatindex(75,40));</script></td>
+                <td class="data"><script>document.write(heatindex(75,35));</script></td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td class="data"><script>document.write(heatindex(80,90));</script></td>
+                <td class="data"><script>document.write(heatindex(80,80));</script></td>
+                <td class="data"><script>document.write(heatindex(80,70));</script></td>
+                <td class="data"><script>document.write(heatindex(80,60));</script></td>
+                <td class="data"><script>document.write(heatindex(80,50));</script></td>
+                <td class="data"><script>document.write(heatindex(80,40));</script></td>
+                <td class="data"><script>document.write(heatindex(80,35));</script></td>
+            </tr>
+            <tr>
+                <td>85</td>    
+                <td class="data"><script>document.write(heatindex(85,90));</script></td>
+                <td class="data"><script>document.write(heatindex(85,80));</script></td>
+                <td class="data"><script>document.write(heatindex(85,70));</script></td>
+                <td class="data"><script>document.write(heatindex(85,60));</script></td>
+                <td class="data"><script>document.write(heatindex(85,50));</script></td>
+                <td class="data"><script>document.write(heatindex(85,40));</script></td>
+                <td class="data"><script>document.write(heatindex(85,35));</script></td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td class="data"><script>document.write(heatindex(90,90));</script></td>
+                <td class="data"><script>document.write(heatindex(90,80));</script></td>
+                <td class="data"><script>document.write(heatindex(90,70));</script></td>
+                <td class="data"><script>document.write(heatindex(90,60));</script></td>
+                <td class="data"><script>document.write(heatindex(90,50));</script></td>
+                <td class="data"><script>document.write(heatindex(90,40));</script></td>
+                <td class="data"><script>document.write(heatindex(90,35));</script></td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td class="data"><script>document.write(heatindex(95,90));</script></td>
+                <td class="data"><script>document.write(heatindex(95,80));</script></td>
+                <td class="data"><script>document.write(heatindex(95,70));</script></td>
+                <td class="data"><script>document.write(heatindex(95,60));</script></td>
+                <td class="data"><script>document.write(heatindex(95,50));</script></td>
+                <td class="data"><script>document.write(heatindex(95,40));</script></td>
+                <td class="data"><script>document.write(heatindex(95,35));</script></td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td class="data"><script>document.write(heatindex(100,90));</script></td>
+                <td class="data"><script>document.write(heatindex(100,80));</script></td>
+                <td class="data"><script>document.write(heatindex(100,70));</script></td>
+                <td class="data"><script>document.write(heatindex(100,60));</script></td>
+                <td class="data"><script>document.write(heatindex(100,50));</script></td>
+                <td class="data"><script>document.write(heatindex(100,40));</script></td>
+                <td class="data"><script>document.write(heatindex(100,35));</script></td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td class="data"><script>document.write(heatindex(105,90));</script></td>
+                <td class="data"><script>document.write(heatindex(105,80));</script></td>
+                <td class="data"><script>document.write(heatindex(105,70));</script></td>
+                <td class="data"><script>document.write(heatindex(105,60));</script></td>
+                <td class="data"><script>document.write(heatindex(105,50));</script></td>
+                <td class="data"><script>document.write(heatindex(105,40));</script></td>
+                <td class="data"><script>document.write(heatindex(105,35));</script></td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td class="data"><script>document.write(heatindex(110,90));</script></td>
+                <td class="data"><script>document.write(heatindex(110,80));</script></td>
+                <td class="data"><script>document.write(heatindex(110,70));</script></td>
+                <td class="data"><script>document.write(heatindex(110,60));</script></td>
+                <td class="data"><script>document.write(heatindex(110,50));</script></td>
+                <td class="data"><script>document.write(heatindex(110,40));</script></td>
+                <td class="data"><script>document.write(heatindex(110,35));</script></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

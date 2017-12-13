@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Dog Tricks</title>
+    <script src = "dog.js"></script>
+    <script src="dogInteraction.js"></script>
+    <script>var doge = new Dog("Lassie", 2005, 10, 10);</script>
+    <!--<script>alert(doge.name);
+            alert(doge.setBirthdate());
+            alert(doge.idle());
+            alert(doge.sit());
+            alert(doge.fetch());
+            alert(doge.shake());
+            alert(doge.down());</script>
+    -->    
+</head>
+<body>
+    <h1>Dog Tricks</h1>
+    <form>
+        <p>Name: <input type="text" onchange="changeName()" id="name"></input></p>
+        <p>Birthdate:</p>
+        <p>Year: <input type="text" onchange="changeBirthdate()" id="year"></input></p>
+        <p>Month: <input type="text" onchange="changeBirthdate()" id="month"></input></p>
+        <p>Day: <input type="text" onchange="changeBirthdate()" id="day"></input></p>
+        <p><select id="mySelect" onchange="changeTrick()">
+            <option value="Idle">Idle</option>
+            <option value="Sit">Sit</option>
+            <option value="Fetch">Fetch</option>
+            <option value="Shake">Shake</option>
+            <option value="Down">Down</option>
+           </select>
+        </p>
+    </form>
+    <h2>My Dog</h2>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td id="dogName"></td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td id="dogBirthday"></td>
+        </tr>
+        <tr>
+            <td>Currently</td>
+            <td id="trick"></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+li.a {
+    list-style-image : url("/crr/3440/homework/arrow.gif");
+}
+
+li.b {
+    list-style : georgian;
+}

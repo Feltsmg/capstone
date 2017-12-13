@@ -1,0 +1,19 @@
+/* style sheet for Example Cafe */
+body {
+    font-family : arial, verdana, sans-serif;
+}
+h2 {
+    font-family : georgia, times, serif;
+    color:#666666;
+}
+p {
+    font-size:90%;
+    color:#333333;
+}
+#navigation a {
+    color:#3399cc;
+    margin-right:20px;
+    
+    text-decoration : none;
+}
+

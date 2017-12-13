@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Current Weather</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+        </script>
+    <script src="weather.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding-right: 20px;
+            padding-left : 5px;
+            padding-top : 5px;
+            padding-bottom : 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Current Weather Conditions</h2>
+    <table>
+        <tr>
+            <td>Location</td>
+            <td>Boone, NC</td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td id="date">&lt;date&gt;</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td id="time">&lt;time&gt;</td>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td id="temp">&lt;temperature&gt;</td>
+        </tr>
+        <tr>
+            <td>Barometer</td>
+            <td id="barometer">&lt;barometer&gt;, &lt;barometer_trend&gt;</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td id="humidity">&lt;humidity&gt;</td>
+        </tr>
+        <tr>
+            <td>Wind speed</td>
+            <td id="speed">&lt;wind_speed&gt;</td>
+        </tr>
+        <tr>
+            <td>Wind gust</td>
+            <td id="gust">&lt;wind_gust&gt;</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <button type="button" id="conditionButton">Refresh Conditions</button>
+
+    <script>
+        $("tr:even").css("background-color", "#DADADA");
+    </script>
+</body>
+</html>                           

@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Current Weather</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+        </script>
+    <script src="weather.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding-right: 20px;
+            padding-left : 5px;
+            padding-top : 5px;
+            padding-bottom : 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Current Weather Conditions</h2>
+    <table>
+        <tr>
+            <td>Location</td>
+            <td>Boone, NC</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td id="time">&lt;time&gt;</td>
+        </tr>
+        <tr>
+            <td>Wind</td>
+            <td id="wind">&lt;wind&gt;</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td id="humidity">&lt;humidity&gt;</td>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td id="temperature">&lt;temperature&gt;</td>
+        </tr>
+        <tr>
+            <td>Today's High</td>
+            <td id="high">&lt;high&gt;</td>
+        </tr>
+        <tr>
+            <td>Today's Low</td>
+            <td id="low">&lt;low&gt;</td>
+        </tr>
+        <tr>
+            <td>Rain Today</td>
+            <td id="rainToday">&lt;rain today&gt;</td>
+        </tr>
+        <tr>
+            <td>Rain This Month</td>
+            <td id="rainMonth">&lt;rain this month&gt;</td>
+        </tr>
+        <tr>
+            <td>Barometer</td>
+            <td id="barometer">&lt;barometer&gt;</td>
+        </tr>
+        <tr>
+            <td>Feels Like</td>
+            <td id="feels">&lt;feels like&gt;</td>
+        </tr>
+        </table>
+
+    <br>
+
+    <button type="button" id="conditionButton">Refresh Conditions</button>
+
+    <script>
+        $("tr:even").css("background-color", "#DADADA");
+    </script>
+</body>
+</html>

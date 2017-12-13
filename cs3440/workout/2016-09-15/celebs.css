@@ -1,0 +1,26 @@
+thead tr th {
+    color : orange;
+    border-top-style : solid;
+    border-bottom-style : solid;
+    border-color : cornflowerblue;
+    text-align : left;
+    height : 40px;
+    padding : 5px;
+}
+
+tr.zebra {
+    background-color : lightgray;
+}
+
+tbody tr td {
+    height : 40px;
+    padding : 5px;
+    font-size : 80%;;
+}
+
+
+table {
+    font-family : sans-serif;
+    text-align : left;
+    border-collapse : collapse;
+}

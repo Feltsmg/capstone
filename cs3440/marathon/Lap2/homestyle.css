@@ -1,0 +1,57 @@
+html {
+    background-color : #F1FFA8;
+    font-family : sans-serif;
+}
+
+#head, #headerRow {
+    color : #85571B;
+    font-weight : bold;
+}
+
+#tableTitle {
+    font-weight : bold;
+}
+
+#menu {
+    background-color : #7D8840;
+    }
+
+#menuTable td {
+    text-align : center;
+    padding : 10px 0px 10px 0px;
+    font-size : 150%;
+    color : #73E5C7;
+    font-weight : bold;
+}
+
+#menu2Table td {
+    font-size : 135%;
+}
+
+#actualTable {
+    background-color : #FFF1D1;
+    color : #3E3E29;
+    border-collapse : collapse;
+}
+
+#actualTable td {
+    padding : 5px 0px 5px 0px;
+    text-align : center;
+}
+
+#headerRow {
+    font-size : 120%;
+}
+
+a {
+    text-decoration : none;
+    color : #73E5C7;
+}
+
+a:hover {
+    color : #A6B555;
+}
+
+.zebra {
+    background-color : #EFD79B;
+}

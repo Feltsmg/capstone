@@ -1,0 +1,105 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blue Ridge Music Center</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <base href="http://student.cs.appstate.edu/feltsmg/cs3440/marathon/Lap2/">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+                </script>
+    <script src="homescript.js"></script>
+</head>
+<body>
+    <!-- This is the logo for the top of the page -->
+    <div id="logo">
+        <img src="brmc2.png" alt="BRMC Logo" height="13%" width="100%">
+    </div>
+
+    <!-- This is the header of the page -->
+    <div id="head">
+        <h1>Blue Ridge Music Center</h1>
+        <h2>Event Administration</h2>
+    </div>
+
+    <!-- This is the menu -->
+    <div id="menu">
+        <table id="menuTable" width="100%">
+            <tr>
+                <td><a href="./">Home</a></td>
+                <td><a href="Attendance/Attendance">Attendance</a></td>
+                <td><a href="Bands/Bands">Bands</a></td>
+                <td><a href="Tickets/Tickets">Tickets</a></td>
+            </tr>
+        </table>
+     </div>
+
+     <br>
+
+     <!-- This is the second menu -->
+     <div id="menu2">
+        <table id="menu2Table" width="100%">
+            <tr>
+                <td id="tableTitle">Current Season</td>
+                <td><select>
+                        <option>Another Season</option>
+                        <option>Season 2</option>
+                        <option>Season 3</option>
+                        <option>Season 4</option>
+                    </select>
+                </td>
+                <form><td>
+                        <input type="text" name="eventSearch" value="Event Search">
+                        <button type="button" id="eventSearch"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1024px-Magnifying_glass_icon.svg.png"
+                            height="10" width="10"></button>
+                      </td>
+                      <td>
+                        <button type="button" id="addEvent">Add Event</button>
+                      </td>
+                </form>
+            </tr>
+        </table>
+     </div>
+
+     <br>
+
+     <!-- This is the table -->
+     <div id="table">
+        <table id="actualTable" width="100%">
+            <tr id="headerRow">
+                <td>Hedline Band</td>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Tickets Sold</td>
+                <td>Income</td>
+                <td>Expense</td>
+                <td>Net</td>
+            </tr>
+            <tr>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+            </tr>
+            <tr>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+            </tr>
+            <tr>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+                <td>Dummy Value</td>
+            </tr>
+        </table>
+</body>
+</html>

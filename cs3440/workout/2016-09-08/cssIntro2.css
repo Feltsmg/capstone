@@ -1,0 +1,35 @@
+p {
+    font-family : "Comic Sans";
+    font-size : 30px;
+    text-align : center;
+    text-shadow : 2px 2px grey;
+}
+
+#first {
+    color : blue;
+    letter-spacing: -2px;
+}
+
+#second {
+    color : black;
+    word-spacing : 10px;
+}
+
+span.transform {
+    text-transform : capitalize;
+}
+
+span.bold {
+    font-weight : bold;
+}
+
+span[go="go"] {
+    background-color : red;
+    border-style : dashed;
+    border-width : 2px;
+    border-color : green;
+}
+
+body {
+    background-color : lightgray;
+}
