@@ -6,7 +6,10 @@ session_start();
 
 function newPost()
 {
+<<<<<<< HEAD
     $filename=handleFile();
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
     $apt_name=$_POST['aptname'];
     $lease_start=$_POST['startdate'];
     $lease_end=$_POST['enddate'];
@@ -17,8 +20,13 @@ function newPost()
     $beds=$_POST['bedrooms'];
     $comments=$_POST['comments'];
     $email=$_SESSION['userEmail'];
+<<<<<<< HEAD
     $query = mysql_query("INSERT INTO APARTMENTS (apt_name, apt_address, lease_start, lease_end, city, state, email, bedrooms, apt_number, comments, img_name)
     VALUES ('$apt_name', '$address', '$lease_start', '$lease_end', '$city', '$state', '$email', '$beds', '$unit', '$comments', '$filename')");
+=======
+    $query = mysql_query("INSERT INTO APARTMENTS (apt_name, apt_address, lease_start, lease_end, city, state, email, bedrooms, apt_number)
+    VALUES ('$apt_name', '$address', '$lease_start', '$lease_end', '$city', '$state', '$email', '$beds', '$unit')");
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 
     header("Location:home.php");
     exit;
@@ -38,6 +46,7 @@ function postApt()
     }
 }
 
+<<<<<<< HEAD
 function handleFile()
 {
 $target_dir = "uploads/";
@@ -104,11 +113,14 @@ function displayTabs(){
 }
 
 
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 if (isset($_POST['postapt'])){
     newPost();
 }
 ?>
 <html>
+<<<<<<< HEAD
 <head>
     <link rel="stylesheet" type="text/css" href="homestyle.css">
     <title>Post Your Apartment</title>
@@ -190,6 +202,9 @@ if (isset($_POST['postapt'])){
     <br>
     <input type="submit" name="postapt" value="Post">
     </form>
+=======
+<body>
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 </body>
 </html>
 

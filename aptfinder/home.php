@@ -12,7 +12,11 @@ function displayName(){
 
 function displayTabs(){
     if(empty($_SESSION["userFName"])){
+<<<<<<< HEAD
         echo "<a href='signup.php'>Sign Up</a>   <a href='login.php'>Log In</a>";
+=======
+        echo "<a href='signup.html'>Sign Up</a>   <a href='login.html'>Log In</a>";
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
     }
     else{
         echo "<a href='logout.php'>Log Out</a>";
@@ -30,7 +34,10 @@ if (isset($_POST['searchapt'])){
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="homestyle.css">
+<<<<<<< HEAD
     <title>Home</title>
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 </head>
 <body>
 <div id ="navBar">
@@ -41,6 +48,7 @@ if (isset($_POST['searchapt'])){
     </ul>
 </div>
 <div id = "aptPost">
+<<<<<<< HEAD
 <p><?php
     if (!empty($_SESSION["userFName"])){
         echo "<a href='post.php' id='postRef'>Post Your Apartment</a>";
@@ -75,6 +83,9 @@ if (isset($_POST['searchapt'])){
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
+=======
+<p><a href='post.html' id="postRef">Post Your Apartment</a></p>
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 </div>
 <div id = "aptSearch">
 <p><div><p>Search by City and State</p>
@@ -141,6 +152,7 @@ if (isset($_POST['searchapt'])){
     </form>
 </div>
 </div>
+<<<<<<< HEAD
 
 <script>
     var slideIndex = 0;
@@ -158,5 +170,7 @@ if (isset($_POST['searchapt'])){
         setTimeout(showSlides, 8000); // Change image every 8 seconds
     } 
 </script>
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 </body>
 </html>

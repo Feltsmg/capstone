@@ -47,6 +47,7 @@ input[type=text] {
     margin: 20px;
 }
 
+<<<<<<< HEAD
 input[type=password] {
     height: 50px;
     width: 50%;
@@ -55,6 +56,8 @@ input[type=password] {
 }
 
 
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 input[type=submit] {
     width: 50%;
     font-size: 100%;
@@ -75,6 +78,7 @@ select {
     margin-left: 25%;
     color: black;
 }
+<<<<<<< HEAD
 
 #signupForm {
     display: inline-block;
@@ -174,3 +178,5 @@ select {
   from {opacity: .4} 
   to {opacity: 1}
 }
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741

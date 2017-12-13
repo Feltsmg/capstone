@@ -37,6 +37,7 @@ function signUp()
         }
     }
 }
+<<<<<<< HEAD
 
 function displayName(){
     if(!empty($_SESSION["userFName"])){
@@ -56,11 +57,14 @@ function displayTabs(){
 }
 
 
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 if (isset($_POST['signup'])){
     signUp();
 }
 ?>
 <html>
+<<<<<<< HEAD
 <head>
     <link rel="stylesheet" type="text/css" href="homestyle.css">
     <link rel="stylesheet" type="text/css" href="signup.css">
@@ -84,6 +88,9 @@ if (isset($_POST['signup'])){
     <input type="submit" name="signup" value="Sign Up">
     </form>
 </div>
+=======
+<body>
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 </body>
 </html>
 

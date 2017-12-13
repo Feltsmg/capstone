@@ -25,6 +25,7 @@ function login()
     }
 }
 
+<<<<<<< HEAD
 function displayName(){
     if(!empty($_SESSION["userFName"])){
         echo "Welcome, ";
@@ -43,6 +44,8 @@ function displayTabs(){
 }
 
 
+=======
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 if (isset($_POST['login'])){
     login();
 }
@@ -50,6 +53,7 @@ if (isset($_POST['login'])){
 
 <html>
 <head>
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="homestyle.css">
     <link rel="stylesheet" type="text/css" href="signup.css">
     <title>Log In</title>
@@ -69,6 +73,11 @@ if (isset($_POST['login'])){
     Password:<input type="password" name="loginpassword"><br>
     <input type="submit" name="login" value="Log In">
     </form>
+=======
+</head>
+
+<body>
+>>>>>>> 3117bdfdcce192f3d69ce11a7956e168cbae9741
 </body>
 </html>
 
